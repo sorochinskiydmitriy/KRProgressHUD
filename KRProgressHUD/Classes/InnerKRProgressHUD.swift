@@ -159,6 +159,7 @@ extension KRProgressHUD {
                 setConstraintsToPresentingVC()
             } else {
                 appWindow = UIApplication.shared.keyWindow
+                hudViewController.view.center = window.center
                 window.makeKeyAndVisible()
             }
         }
